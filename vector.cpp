@@ -19,8 +19,4 @@ void Vector::add(float value) {
     size++;
 }
 
-int main() {
-    Vector v;
-    v.add(3.3);
-    v.add(3.6);
-}
+
