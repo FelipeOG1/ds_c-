@@ -13,8 +13,6 @@ void Vector::expandCapacity() {
 
 void Vector::add(float value) {
     if (static_cast<int>(size) == capacity) expandCapacity();
-    std::cout << "current size" << size << std::endl;
-    std::cout << "current capacity" << capacity << std::endl;
     values[size] = value;
     size++;
 }
