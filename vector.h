@@ -10,11 +10,6 @@ public:
     int capacity;
     size_t size;
     std::unique_ptr<float []> values;
-    
-    Vector() : capacity(20), size(0) {
-        values = std::make_unique<float []>(capacity);
-    }
-
-    
+    Vector() : capacity(20), size(0), values(std::make_unique<float []>(20)) {}
     
 };
