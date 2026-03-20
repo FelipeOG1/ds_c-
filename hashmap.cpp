@@ -85,6 +85,7 @@ public:
 
     void put(std::string value) {
         size_t index = getHash(value) % buckets.size();
+        std::cout << "index generated " << index << std::endl;
         if (buckets[index].get(value) == nullptr) {
             buckets[index].add(value);
         }
@@ -100,3 +101,4 @@ public:
         return nullptr; 
     }
 };
+
