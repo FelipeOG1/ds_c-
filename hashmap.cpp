@@ -1,7 +1,10 @@
-#include <iostream>
+
+
 #include <memory>
 #include <string>
 #include <vector>
+#include <iostream>
+
 struct Node {
     std::string value;
     std::unique_ptr<Node> next;
@@ -62,7 +65,6 @@ public:
 
 };
 
-
 class HashMap {
 private:
     std::vector<LinkedList> buckets; 
@@ -98,11 +100,3 @@ public:
         return nullptr; 
     }
 };
-
-
-int main() {
-    
-    
-    return 0;
-}
-
